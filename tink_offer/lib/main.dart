@@ -24,8 +24,6 @@ class TinkStart {
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Apphud.start(apiKey: 'app_wWtgMo58CvotqY6VeKbUQKxHAABdRc');
-  final ppre = await SharedPreferences.getInstance();
-  await ppre.setBool('profPrem', true);
   await TinkStart.tinkDemo();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const TinkOfferApp());
